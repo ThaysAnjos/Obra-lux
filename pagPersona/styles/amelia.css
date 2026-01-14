@@ -1,0 +1,96 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fundo geral */
+body {
+    background: linear-gradient(180deg, #0b0b0f, #111118);
+    color: #e6e6eb;
+    min-height: 100vh;
+}
+
+/* Conteúdo central */
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+/* Imagem principal */
+#img-amelia {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#img-amelia img {
+    width: 220px;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(120, 120, 255, 0.25);
+}
+
+/* Títulos */
+h1 {
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 20px;
+    color: #d8d8ff;
+    letter-spacing: 2px;
+}
+
+h2, h3, h4, h5, h6 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color: #b9b9ff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Textos */
+p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #d0d0da;
+    margin-bottom: 10px;
+}
+
+/* Imagem da arma */
+img[alt*="arma"] {
+    display: block;
+    margin: 30px auto 10px;
+    width: 180px;
+    filter: drop-shadow(0 0 10px rgba(150, 150, 255, 0.3));
+}
+
+/* Separação visual */
+h2::before,
+h3::before,
+h4::before,
+h5::before,
+h6::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(to right, #6f6fff, transparent);
+    margin-bottom: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+
+    #img-amelia img {
+        width: 180px;
+    }
+}
